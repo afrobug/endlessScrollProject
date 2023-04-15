@@ -6,12 +6,23 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Dosis', sans-serif;
     font-family: 'Sedgwick Ave Display', cursive;
     background-color: whitesmoke;
 }
 
-h1 {}
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.loader {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
 
 .loader img {
     position: fixed;
@@ -26,4 +37,15 @@ h1 {}
 .img-container img {
     width: 100%;
     margin-top: 5px;
+}
+
+/* media query */
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 20px;
+    }
+    .img-container {
+        margin: 10px;
+    }
 }
